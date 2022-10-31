@@ -14,4 +14,7 @@ const collection = galleryItems
   .join("");
 gallery.innerHTML = collection;
 
-new SimpleLightbox(".gallery a", {});
+new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
